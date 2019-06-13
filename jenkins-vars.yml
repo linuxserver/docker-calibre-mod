@@ -1,0 +1,29 @@
+---
+
+# jenkins variables
+project_name: docker-calibre-mod
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'kovidgoyal'
+  - EXT_REPO = 'calibre'
+  - BUILD_VERSION_ARG = 'CALIBRE_RELEASE'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-calibre-mod'
+  - CONTAINER_NAME = 'calibre-mod'
+  - DOCKERHUB_IMAGE = 'linuxserver/calibre-mod'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/calibre-mod'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/calibre-mod'
+  - DIST_IMAGE = 'ubuntu'
+  - MULTIARCH='false'
+  - CI='true'
+  - CI_WEB='false'
+  - CI_PORT=''
+  - CI_SSL='false'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_AUTH='user:password'
+  - CI_WEBPATH=''
